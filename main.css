@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color:azure; /*background-color muda a cor de fundo do body"*/
+    padding-top: 100px; /*Espaçamento do topo*/
+}
+
+header {
+    display: flex;  /* display flex é para deixar os elementos um ao lado do outro */
+    align-items: center;  /* Align items "center" é para deixar eles centralizados  */
+    margin-bottom: 40px; /*Vai colocar uma margem entre o formulario e o cabeçario, assim deixando espaçado*/
+}
+
+header img {
+    height: 36px; /*tamanho do logo */
+    margin-right: 16px;  /*margem a direita do logo*/
+}
+
+header h1{
+    font-size: 40px; /*Tamanho da fonte das letras do titulo */
+    font-weight: bold; /*grossura das letras */
+}
+
+.container{
+    width: 100%; /*Esse container vai ocupar %100 até 960 px */
+    max-width: 960px; /*Vai fazer com que o conteudo fique centralizado mesmo com monitores ultrawide*/
+    margin: 0 auto; /*para centralizar na horizontal */
+}
+
+form{
+    display: flex; /*usado para igualar e alinhar os elementos do input do botão ao input, sem ele fica desalinhado mesmo que quase imperceptivel*/
+    max-width: 640px; /*Vai fazer com que o conteudo fique centralizado mesmo com monitores ultrawide*/
+    width: 100%; /*Esse form vai ocupar %100 até 640px */
+    justify-content: space-between; /*vai distribuir um espaçamento entre os itens fazendo ele não ficarem grudados*/
+    margin-bottom: 56px; /*Aplica uma margem na parte de baixo do formulario*/
+}
+
+form input{
+    font-size: 24px; /*Tamanho da fonte das letras do input*/
+    background-color: aliceblue; /*Muda a cor de fundo para branco do input*/
+    border: none; /*Remove a borda do input */
+    border-bottom: 2px solid #000; /*adiciona uma borda apenas a parte de baixo do input em preto */
+    padding: 8px; /*Espaçamento ao elemento aplicado, pode ser usado para definir o tamanho do elemento, teste outros numeros na duvida*/
+}
+
+form button{
+    background-color: rgb(138, 218, 59); /*Vai mudar a cor de fundo do botão dentro do formulario*/
+    color: aliceblue; /*Cor do texto do botão*/
+    font-size: 24px; /*Tamanho das letras do botão*/
+    font-weight: bold; /*grossura das letras*/
+    border: none; /*remove a bordar do botão*/
+    cursor: pointer; /*cursor muda toda vez que o mouse passa por cima*/
+    padding: 8px; /*Espaçamento ao elemento aplicado, pode ser usado para definir o tamanho do elemento, teste outros numeros na duvida*/
+}
+
+table{
+    width: 100%; /*Essa tabela vai ocupar %100 de todo o container */
+}
+
+table th{
+    border-bottom: 2px solid #000; /* vai aplicar a tabela uma borda preta apenas na parte de baixo*/
+    padding: 16px; /*Espaçamento ao elemento aplicado, pode ser usado para definir o tamanho do elemento, teste outros numeros na duvida*/
+    font-size: 24px; /*Tamanho das letras da tabela*/
+    font-weight: bold;  /*grossura das letras*/
+}
+
+table td{
+    text-align: center;  /*Alinha os elementos ao centro, assim deixando certo a tabela*/
+    font-size: 18px; /*Tamanho das letras da tabela*/
+    padding: 16px 0; /*Espaçamento apenas na parte superior e inferior */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* vai aplicar a tabela uma borda preta apenas na parte de baixo*/
+}
+
+table td img{
+    height: 30px; /*Tamanho do icone(emoji)*/
+
+}
+
+.resultado {
+    padding: 8px; /*Espaçamento ao elemento aplicado, pode ser usado para definir o tamanho do elemento, teste outros numeros na duvida*/
+    font-weight: bold;  /*grossura das letras*/
+    color: aliceblue; /*Cor do texto do elemento*/
+    background-color: #000;/*Muda a cor de fundo para preto do elemento*/
+    border-radius: 3px; /*Muda os canto da borda, fazendo ficar mais redondos*/
+}
+
+.aprovado{
+    background-color: rgb(138, 218, 59); /*Muda a cor de fundo para verde do elemento*/
+}
+
+.reprovado{
+    background-color: red; /*Muda a cor de fundo para vermelho do elemento*/
+}
+
